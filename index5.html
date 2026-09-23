@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اسلامی معلومات کوئز</title>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background Music (Looping) -->
+<audio id="bgMusic" src="background.mp3" loop pre="auto"></audio>
+
+    <div id="flowerContainer"></div>
+
+    <div class="card">
+        <!-- Welcome Screen -->
+        <div id="welcomeScreen">
+            <div class="header-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h1>آن لائن اسلامی کوئز</h1>
+            <p class="sub-text">اپنی دینی معلومات کو پرکھنے کے لیے اپنا نام درج کریں</p>
+            
+            <input type="text" id="studentName" placeholder="اپنا پورا نام درج کریں..." autocomplete="off">
+            <button id="startBtn" class="primary-btn"><i class="fa-solid fa-play"></i> کوئز شروع کریں</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quizScreen" class="hidden">
+            <div class="topBar">
+                <span id="scoreBox">اسکور: 0</span>
+                <span id="questionCount">1 / 15</span>
+            </div>
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <h2 id="question">سوال لوڈ ہو رہا ہے...</h2>
+
+            <div id="options" class="options-container"></div>
+
+            <button id="nextBtn" class="primary-btn"><i class="fa-solid fa-arrow-left"></i> اگلا سوال</button>
+        </div>
+    </div>
+
+    <script src="script5.js"></script>
+</body>
+</html>
